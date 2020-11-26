@@ -4,9 +4,17 @@ const brain = require('brain.js');
 const network = new brain.NeuralNetwork();
 
 network.train([
-    {input:{time: 0.06}, output:{goodMornig:1, goodAfternoon: 0, goodEvening: 0}},
-    {input:{time: 0.14}, output:{goodMornig:0, goodAfternoon: 1, goodEvening: 0}},
-    {input:{time: 0.20}, output:{goodMornig:0, goodAfternoon: 0, goodEvening: 1}}
+    //Simulation A
+    //{input:{time: 0.06}, output:{goodMornig:1, goodAfternoon: 0, goodEvening: 0}},
+    //{input:{time: 0.14}, output:{goodMornig:0, goodAfternoon: 1, goodEvening: 0}},
+    //{input:{time: 0.20}, output:{goodMornig:0, goodAfternoon: 0, goodEvening: 1}}
+    //Simulation B
+    {input:{time: 0.11}, output:{goodMornig:1, goodAfternoon: 0, goodEvening: 0}},
+    {input:{time: 0.12}, output:{goodMornig:0, goodAfternoon: 1, goodEvening: 0}},
+    {input:{time: 0.17}, output:{goodMornig:0, goodAfternoon: 1, goodEvening: 0}},
+    {input:{time: 0.18}, output:{goodMornig:0, goodAfternoon: 0, goodEvening: 1}},
+    {input:{time: 0.23}, output:{goodMornig:0, goodAfternoon: 0, goodEvening: 1}},
+    {input:{time: 0.00}, output:{goodMornig:1, goodAfternoon: 0, goodEvening: 0}}
 ])
 
 for(let i=0; i<24; i++)
